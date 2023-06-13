@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SR RENOV PLUS</title>
+        <link rel="stylesheet" href="/css/srp.css" />
+        <link rel="stylesheet" href="/css/normalize.css" />
+        <script src="/js/jquery-3.4.1.min.js"></script>
+        <script src="/js/script.js"></script>
+    </head>
+    <body>
+        <header id="mainHeader">
+            <a href="/index.html"><img src="/images/logoImg.svg" alt="Logo SR RENOV PLUS" id="logoImg" /></a>
+            <h1 class="accessibility">Menu principal</h1>
+            <h1 class="accessibility">Menu principal</h1>
+            <nav id="mainNav">
+                <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
+                <ul>
+                    <li><a href="index.html" title="Vers la page d'accueil du site 'SR RENOV PLUS'">Accueil</a></li>
+                    <li><a href="prestations.html" title="Découvrez nos différentes préstations">Prestations</a></li>
+                    <li><a href="projets.html" title="Vers quelques projets aboutis par notre entreprise">Projets</a></li>
+                    <li><a href="contact.html" title="Vers la page de contact de ce site">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="menuToggle"><img src="/images/hamburger.svg" alt="Ouvrir / Fermer le menu" /></button>
+        </header>
+        <main class="contact">
+            <h1>Contactez-nous &#x1F4E8;</h1>
+                <p>Merci de compléter le formulaire suivant pour nous contacter. Tous les champs de ce formulaire sont requis.</p>
+                <form id="frmContact" action="https://formsubmit.co/026734fe08d3bd40b8eca915e34a283e" method="POST">
+                    <div>
+                        <div>
+                            <label for="fName">Prénom</label>
+                            <input type="text" name="fName" id="fName" required autofocus />
+                        </div>
+                        <div>
+                            <label for="lName">Nom de famille</label>
+                            <input type="text" name="lName" id="lName" required />
+                        </div>
+                        <div>
+                            <label for="email">Votre e-mail</label>
+                            <input type="email" name="email" id="email" required />
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="message">Votre message</label>
+                            <textarea name="message" id="message" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit">Envoyer</button>
+                    <!-- <input type="hidden" name="_next" value="https://srrenovplus.com/merci.html" /> -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_autoresponse" value="your custom message">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" id="fill-me-in" />
+                </form>
+        </main>
+        <footer id="mainFooter">
+            <p>&copy; 2023 SR RENOV PLUS</p>
+        </footer>
+    </body>
+</html>
