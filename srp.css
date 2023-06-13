@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&display=swap');
+
+:root{
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1rem;
+    font-family: Montserrat;
+}
+
+.accessibility{
+    position: absolute;
+    left: -15000px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+#mainHeader, #mainFooter{
+    background-color: #000000;
+}
+
+#mainFooter{
+    color: #FFFFFF;
+    height: 40px;
+    width: 100%;
+    font-family: Josefin Sans;
+    font-size: .5em;
+    position: fixed;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/*HEADER*/
+
+#mainHeader{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    display: grid;
+    grid-template-columns: 100px 1fr 40px;
+    z-index: 1000;
+}
+
+#logoImg{
+    width: 100px;
+    z-index: 1000;
+    position: relative;
+    padding: 5px;
+    margin: 5px;
+}
+
+#mainNav{
+    background-color: #000000;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    display: none;
+}
+
+#mainNav ul{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainNav a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: Josefin Sans;
+    font-size: 1.5em;   
+    display: block;
+    text-align: center;
+}
+
+#mainNav a:hover{
+    color: #1C4E9D;
+}
+
+#menuToggle{
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    position:absolute; top:0; right:0; height: 100%;
+}
+
+
+
+
+
+/*INDEX*/
+
+.index p{
+    text-align: center;
+    margin: 0;
+    line-height: 30px;
+}
+
+#imageIndex{
+    width: 100%;
+    padding-top: 100px;
+    filter: brightness(70%);
+}
+
+#phraseIndex{
+    position: absolute;
+    /* top: 20%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Josefin Sans;
+    font-size:smaller;
+    color: #FFFFFF;
+}
+
+#buttonIndex{
+    position:sticky;
+    left: 50%;
+    transform: translate(-50%, -70px);
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+#buttonIndex:hover{
+    background-color:#54AFE3;
+}
+
+.circleContainer{
+    width:33%;
+    text-align:center;
+    float:left;
+    padding-top: 20px;
+}
+
+.circle{
+    display:inline-block;
+    width:65px;
+    height:55px;
+    border-radius:60%;
+    border: 2px solid #000000;
+    background-color: #000000;
+}
+
+.circleContainer p{
+    padding-top: 20px;
+    font-family: Josefin Sans;
+    font-size: small;
+}
+
+.circleContainer img{
+    height: 55px;
+    width: auto;
+}
+
+#alignLeft{
+    padding-top: 55px;
+}
+
+#premierTexte{
+    padding: 80px 20px 80px 20px;
+}
+
+#deuxiemeTexte{
+    padding: 80px 20px 120px 20px;
+}
+
+
+
+
+
+/*PRESTATIONS*/
+
+#pageContent{
+    padding: 50px;
+}
+
+#pageContent.prestations{
+    padding-top: 160px;
+    padding-bottom: 100px;
+}
+
+.titresPrestations{
+    list-style-type: none;
+    text-align: center;
+    font-family: Josefin Sans;
+}
+
+#pageContent.prestations ul{
+    margin: 0;
+    padding: 0px;
+    display:grid;
+    grid-gap: 50px; /*permet de creer un espace entre les list items !!*/
+}
+
+#pageContent.prestations p{
+    text-align: justify;
+    font-family: Montserrat;
+}
+
+
+
+
+
+/*PROJETS*/
+
+
+
+
+
+/*CONTACT*/
+
+.contact{
+    padding: 100px;
+}
+
+.contact > h1{
+    font-family: Josefin Sans;
+}
+
+.contact form{
+    display: grid;
+    border-top: solid 1px #000000;
+}
+
+.contact form > div > div{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 20px 0;
+}
+
+.contact form > div:last-child > div:first-child{
+    margin: 0 0 20px 0;
+}
+
+.contact form label{
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact form textarea{
+    height: 182px;
+    resize: none;
+}
+
+.contact form button{
+    padding: 10px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 30px;
+}
+
+.contact form button:hover{
+    background-color:#54AFE3;
+}
+
+.contact form button:active{
+    background-color: #1C4E9D;
+}
+
+.contact form input, .contact form textarea{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.contact form input:valid, .contact form textarea:valid{
+    border: 1px solid #00751F;
+}
+
+.contact form input.invalid, .contact form textarea.invalid{
+    border: 1px solid #C1272D;
+}
+
+.contact form input[type="text"]#fill-me-in{ 
+    display: none; 
+}
+
+
+
+
+
+/*MERCI*/
+
+.merci{
+    padding: 300px 100px 200px 100px;
+    text-align: center;
+}
+
+.merci > h1{
+    font-family: Josefin Sans;
+}
+
+
+
+
+
+/*SCREENS*/
+
+@media screen and (min-width:320px){
+    #phraseIndex{
+        top:27%;
+        font-size: smaller;
+    }
+    #buttonIndex{
+        transform: translate(-50%, -60px);
+    }
+}
+
+
+
+@media screen and (min-width: 380px){
+    #phraseIndex{
+        top:180px; /*27%*/
+        font-size: medium;
+    }
+    #buttonIndex{
+        transform: translate(-50%, -60px);
+    }
+    .circleContainer p{
+        font-size: smaller;
+    }
+    #premierTexte{
+        padding: 80px 50px 80px 50px;
+    }
+    #deuxiemeTexte{
+        padding: 80px 50px 120px 50px;
+    }
+}
+
+
+
+@media screen and (min-width: 570px){
+    #phraseIndex{
+        top:200px; /*30%*/
+        font-size: x-large;
+    }
+    #buttonIndex{
+        transform: translate(-50%, -100px);
+    }
+    .circleContainer p{
+        font-size: large;
+    }
+    #premierTexte{
+        padding: 80px 70px 80px 70px;
+    }
+    #deuxiemeTexte{
+        padding: 80px 70px 120px 70px;
+    }
+}
+
+
+
+@media screen and (min-width: 740px){
+    #menuToggle{
+        display: none;
+    }
+    #mainHeader{
+        grid-template-columns: 1fr 2fr;
+    }
+    #mainNav{
+        position: static;
+        display: block !important;
+    }
+    #mainNav ul{
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100px;
+        align-items: center;
+    }
+    #mainNav a{
+        font-size: 1.2em;
+    }
+    #phraseIndex{
+        font-size:x-large ;
+    }
+    .circleContainer{
+        padding-top: 60px;
+    }
+    .circle{
+        width: 85px;
+        height: 75px;
+    }
+    .circleContainer img{
+        height: auto;
+        width: auto;
+    }
+    #premierTexte{
+        padding: 80px 70px 80px 70px;
+    }
+    #alignRight{
+        padding: 0px 100px 80px;
+    }
+    #alignLeft{
+        padding: 100px 100px 0px;
+    }
+    #deuxiemeTexte{
+        padding: 0px 70px 120px 70px;
+    }
+    #pageContent.prestations ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+@media screen and (min-width: 930px){
+    #phraseIndex{
+        top:250px; /*37%*/
+        font-size: xx-large;
+    }
+    #buttonIndex{
+        transform: translate(-50%, -200px);
+    }
+    div img{
+        display: block;
+        margin: auto;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px){
+    .contact form{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .contact form button{
+        padding: 10px;
+        border: none;
+        grid-column: 1 / -1
+    }
+    #pageContent.prestations ul{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+    #phraseIndex{
+        top:20%;
+        font-size: xx-large;
+    }
+}
+
+
+
+@media screen and (min-width: 1300px){
+    #alignRight{
+        float: right;
+        padding: 0px 0px 100px 50px;
+    }
+    #premierTexte{
+        padding-top: 30%;
+    }
+    #alignLeft{
+        float: left;
+        padding: 100px 50px 100px 0px;
+    }
+    #deuxiemeTexte{
+        padding-top: 22%;
+    }
+}
+
+
+
+
+/* En cours de rénovation...present dans projets et prestations.html
+.box{
+    display: flex;
+    width: 100%;
+    height: 1200px;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+*/
